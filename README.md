@@ -1,4 +1,4 @@
-# dcg-antigravity-skill
+# antigravity-destructive-command-guard-dcg
 
 A [dcg](https://github.com/Dicklesworthstone/destructive_command_guard) (Destructive Command Guard) integration for [Google Antigravity IDE](https://antigravity.google).
 
@@ -46,8 +46,8 @@ Skill triggers: dcg test "rm -rf /project/.cache"
 ### Option 1: Installer script
 
 ```bash
-git clone https://github.com/Dicklesworthstone/dcg-antigravity-skill.git
-cd dcg-antigravity-skill
+git clone https://github.com/matznerd/antigravity-destructive-command-guard-dcg.git
+cd antigravity-destructive-command-guard-dcg
 ./install.sh
 ```
 
@@ -62,7 +62,7 @@ cp SKILL.md ~/.gemini/antigravity/skills/dcg-guard/SKILL.md
 
 ```bash
 mkdir -p ~/.gemini/antigravity/skills/dcg-guard && \
-curl -fsSL https://raw.githubusercontent.com/Dicklesworthstone/dcg-antigravity-skill/main/SKILL.md \
+curl -fsSL https://raw.githubusercontent.com/matznerd/antigravity-destructive-command-guard-dcg/main/SKILL.md \
   -o ~/.gemini/antigravity/skills/dcg-guard/SKILL.md
 ```
 
