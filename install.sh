@@ -25,7 +25,7 @@ if ! command -v dcg >/dev/null 2>&1; then
 fi
 
 echo "✓ dcg found: $(command -v dcg)"
-DCG_VERSION=$(dcg --version 2>/dev/null || echo "unknown")
+DCG_VERSION=$(dcg --version 2>&1 | grep -oE '[0-9]+\.[0-9]+\.[0-9]+' | head -1 || echo "unknown")
 echo "  Version: $DCG_VERSION"
 echo ""
 
